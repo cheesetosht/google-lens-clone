@@ -5,7 +5,6 @@ export const Crop = ({ imgSrc }: { imgSrc: string }) => {
 	const cropperRef = useRef<ReactCropperElement>(null);
 	const onCrop = () => {
 		const cropper: any = cropperRef.current?.cropper;
-		console.log(cropper.getCroppedCanvas().toDataURL());
 	};
 
 	return (
